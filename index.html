@@ -6,54 +6,33 @@
         <title>Portfolio - Jemish Mangukiya</title>
 
         <link rel="stylesheet" href="static/css/style.css">
+        <script src="static/js/script.js"></script>
     </head>
     <body>
         <div class="container">
-            <div class="header">
-                <div class="logo">
-                    <img src="static/images/Jems-removebg-preview.png" width="100px" height="75px" alt="">
-                    <div class="title">
-                        <h1>Jemish Mangukiya</h1>
-                        <p>Web Developer | Software Engineer</p>
+            <div w3-include-html="pages/templates/header.html"></div> 
+            <main>
+                <div class="main-content">
+                    <div class="profile">
+                        <div id="photo" class="profle-content">
+                            <img src="/static/images/photo-removebg-preview.png" alt="">
+                        </div>
+                        <div id="name" class="profle-content">
+                            <h2>Hi! It's Jemish Mangukiya.</h2>
+                        <p>This is a brief introduction to my work and projects. 
+                            Feel free to explore the sections above to learn more about me, 
+                            my projects, education, and experience.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="nav">
-                    <nav class="nav-menu">
-                        <ul class="nav-links">
-                            <li>
-                                <div class="link">
-                                    <a href="index.html">Home</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link">
-                                    <a href="about.html">About</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link">
-                                    <a href="projects.html">Projects</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link">
-                                    <a href="about.html">Education</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link">
-                                    <a href="about.html">Experience</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link">
-                                    <a href="contact.html">Contact</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="footer" style="background: red;">
+                    <p>&copy; 2023 Jemish Mangukiya. All rights reserved.</p>
                 </div>
-            </div>
+            </main>
         </div>
+
+        <script>
+            includeHTML();
+        </script>
     </body>
 </html>
